@@ -30,6 +30,10 @@
   margin: 0 auto;
 }
 
+.box5{
+  flex-direction: row;
+}
+
 .box4-1,.box4-2{
   float: left;
 }
@@ -50,14 +54,23 @@
   background: #00ff51;
 }
 
+.box6-1{
+  order: 1;
+}
+
 .box6-2{
   background: #d4ff00;
+  order: 2;
 }
 
 .box6-3{
   background: #ff00e1;
+  order: 3;
 }
 
+.box7-3{
+  display: none;
+}
 
 .box5-1,.box5-2,.box5-3,.box6-1,.box6-2,.box6-3,.box7-1,.box7-2{
   display: flex;
