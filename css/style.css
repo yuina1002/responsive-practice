@@ -42,7 +42,7 @@
   background: #ff0000;
 }
 
-.box3-1,.box4-2,.box5-2{
+.box3-1,.box4-2,.box5-2,.box7-3{
   background: #0008ff;
 }
 
@@ -68,17 +68,23 @@
   order: 3;
 }
 
+.box7-1{
+  position: relative;
+}
+
 .box7-3{
+  position: absolute;
+  z-index: 1;
   display: none;
 }
 
-.box5-1,.box5-2,.box5-3,.box6-1,.box6-2,.box6-3,.box7-1,.box7-2{
+.box5-1,.box5-2,.box5-3,.box6-1,.box6-2,.box6-3{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.box2,.box3-1,.box3-2,.box4-1,.box4-2,.box5-1,.box5-2,.box5-3,.box6-1,.box6-2,.box6-3,.box7-1,.box7-2{
+.box2,.box3-1,.box3-2,.box4-1,.box4-2,.box5-1,.box5-2,.box5-3,.box6-1,.box6-2,.box6-3,.box7-1,.box7-2,.box7-3{
   width: 300px;
   height: 300px;
 }
@@ -95,7 +101,7 @@
     margin-right: 50px;
   }
   .box4-1,.box4-2{
-    float: none;
+    clear: left;
   }
   .box5{
     flex-direction: row-reverse;
@@ -110,9 +116,7 @@
     order: 3;
   }
   .box7-3{
-    background: #0008ff;
-    width: 300px;
-    height: 300px;
+    display: block;
   }
 }
 
